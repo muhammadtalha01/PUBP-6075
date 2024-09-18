@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag -->
+    <title>Ed Discussion</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/Ed.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .header {
+            background-color: rgb(80, 40, 140);
+        }
+        .navLink {
+            display: inline-block;
+            padding: 10px 20px; /* Simplified padding */
+        }
+        .montserrat-jumbo {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            color: #000;
+        }
+        .montserrat-header {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        .montserrat-row-text {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .jumbotron h2 {
+                font-size: 1.5em; /* Adjust heading size for smaller screens */
+            }
+            .navLink {
+                text-align: center; /* Center nav links on smaller screens */
+                display: block; /* Stack nav links vertically */
+                margin-bottom: 10px; /* Add space between links */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .jumbotron h2 {
+                font-size: 1.2em; /* Further adjust heading size for mobile */
+            }
+            .col-md-4 {
+                margin-bottom: 20px; /* Add space between columns on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header" style="text-align:left;">
+        <div class="navLink montserrat-header"><h3 style="margin:0;"><img src="img/ed-navbar.png" height=50><b> Phishing Simulation</b></h3></div>
+    </div>
+    <div class="container" style="text-align:center">
+
+        <div class="jumbotron" style="position: relative; text-align: center; background-image: url('https://media.istockphoto.com/id/1327520414/vector/phishing-email-hacking-fraud-envelope.jpg?s=612x612&w=0&k=20&c=Sg6fgif8OlC2PqeQGMnJIt1LEtI5YXvL7ywcg68MiUY='); background-size: cover; background-position: center; opacity: 0.5;">
+            <div style="background-color: rgba(255, 255, 255, 0.8); padding: 20px; position: relative; z-index: 1;">
+                <h2 class="montserrat-jumbo">You clicked on a simulated phishing test.</h2>
+                <h2 class="montserrat-jumbo">Here are some tips to help you stay safer in the future</h2>
+            </div>
+        </div>
+
+        <div class="row montserrat-row-text">
+            <div class="col-md-4"><h1>Tip: #1</h1>
+                <h2>Stop, Look, Think</h2>
+                <p>Did anything look out of the ordinary? Did you recognize the sender's address? Was it similar but not the same as an official email?</p>
+                <pre><p style="font-size:1.2em;">Ed Discussion &lt;support@<font color=red>edsstem</font>.org&gt;</p></pre>
+            </div>
+            <div class="col-md-4"><h1>Tip: #2</h1>
+                <h2>Do you spot a red flag?</h2>
+                <p>Phishing emails often create a sense of urgency, pressuring the recipient to act quickly. Did you note a sense of urgency?</p>
+                <img src="img/email-snapshot.png" width=100%>
+            </div>
+            <div class="col-md-4"><h1>Tip: #3</h1>
+                <h2>When in doubt...</h2>
+                <p>If you ever think that an email is suspicious it is better to err on the side of caution. <a href="https://www.oit.gatech.edu/contact-us">Submit a Ticket</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS (Optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
